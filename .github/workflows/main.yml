@@ -15,7 +15,7 @@ jobs:
 
         with:
           target_repo_url:
-            ssh://git-codecommit.eu-west-1.amazonaws.com/v1/repos/test-github-action
+            ${{ secrets.CODECOMMIT_TARGET_REPO }}
           ssh_private_key:
             ${{ secrets.CODECOMMIT_SSH_PRIVATE_KEY }}
           ssh_username:                                 # <-- (for codecommit) you need to specify ssh-key-id as ssh username.
